@@ -2870,7 +2870,7 @@ body.menu-open {
 
 .hero-products .item-days {
   --hero-motion-x: 6px;
-  --hero-motion-y: -8px;
+  --hero-motion-y: 10px;
   --hero-motion-rotate: 8.5deg;
 }
 
@@ -2908,7 +2908,7 @@ body.menu-open {
 
 .m-products .item-days {
   --hero-motion-x: 1.6px;
-  --hero-motion-y: -2.1px;
+  --hero-motion-y: 2.6px;
   --hero-motion-rotate: 8.5deg;
 }
 
