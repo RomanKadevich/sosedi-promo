@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Рекламная игра «Поймай сладкий вайб»" />
+    <title>Поймай сладкий вайб</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=button-states-47" />
+  </head>
+  <body>
+    <div class="stage">
+      <main class="canvas canvas--desktop">
+        <header class="header">
+          <button
+            class="burger"
+            type="button"
+            aria-label="Открыть меню"
+            data-menu-open
+          >
+            <i></i><i></i><i></i>
+          </button>
+          <nav class="desktop-nav">
+            <a href="#rules-d">Правила</a><a href="#prizes-d">Призы</a
+            ><a href="#faq-d">Вопрос-ответ</a
+            ><a href="#winners-d">Победители</a>
+          </nav>
+          <img class="logo" src="assets/figma-export/logo.svg" alt="Соседи" />
+          <a class="cabinet" href="#">Личный кабинет</a>
+        </header>
+        <aside class="menu-preview menu-preview--tablet" aria-hidden="true">
+          <img src="assets/reference-svg/menu-frame.svg" alt="" />
+          <button
+            type="button"
+            class="menu-close"
+            aria-label="Закрыть меню"
+            data-menu-close
+          ></button>
+          <nav aria-label="Меню">
+            <a href="#top">Главная</a><a href="#rules-m">Правила</a
+            ><a href="#prizes-m">Призы</a><a href="#winners-m">Победители</a
+            ><a href="#">Личный кабинет</a>
+          </nav>
+        </aside>
+
+        <section class="hero">
+          <div class="date">С 19.08.2026 ПО 13.10.2026</div>
+          <h1 class="sr-only">Поймай сладкий вайб</h1>
+          <img
+            class="hero-title-art"
+            src="assets/reference-svg/title-tablet.svg"
+            alt=""
+          />
+          <div class="weekly sr-only">Розыгрыши каждую неделю</div>
+          <img
+            class="weekly-art"
+            src="assets/reference-svg/badge-tablet.svg"
+            alt=""
+          />
+          <img
+            class="hero-prize"
+            src="assets/extracted-hero/image5_5204_17196.png"
+            alt="Главный приз 5000 белорусских рублей"
+          />
+          <div class="prize-caption">ГЛАВНЫЙ ПРИЗ</div>
+          <div class="hero-products hero-layers" aria-label="Игровая продукция">
+            <img
+              class="hero-item item-milka"
+              src="assets/extracted-hero/image2_5204_17196.png"
+              alt="Milka"
+            />
+            <img
+              class="hero-item item-alpen"
+              src="assets/extracted-hero/image1_5204_17196.png"
+              alt="Alpen Gold"
+            />
+            <img
+              class="hero-item item-picnic"
+              src="assets/extracted-hero/image3_5204_17196.png"
+              alt="Picnic"
+            />
+            <img
+              class="hero-item item-oreo"
+              src="assets/extracted-hero/image0_5204_17196.png"
+              alt="Oreo"
+            />
+            <img
+              class="hero-item item-barni"
+              src="assets/extracted-hero/image4_5204_17196.png"
+              alt="Барни"
+            />
+            <img
+              class="hero-item item-days"
+              src="assets/extracted-hero/image6_5204_17196.png"
+              alt="7 Days"
+            />
+          </div>
+        </section>
+
+        <svg
+          class="orange-field orange-field--desktop"
+          viewBox="0 0 1440 4184"
+          aria-hidden="true"
+        >
+          <path
+            d="M1439.69 427V3809.7H0V744.261C180.981 845.894 661.357 802.109 800.827 780.674C1171.25 690.342 1310.1 550.461 1439.69 427Z"
+            fill="currentColor"
+          />
+        </svg>
+        <img
+          class="desktop-doodles"
+          src="assets/supplied/background-tablet.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          class="desktop-headings-art"
+          src="assets/extracted-hero/section-headings-tablet.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          class="desktop-prize-details-art"
+          src="assets/extracted-hero/prize-details-tablet.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <section class="steps section-orange" id="rules-d">
+          <h2 class="section-title sr-only">КАК ПРИНЯТЬ УЧАСТИЕ</h2>
+          <div class="blue-label"><span class="sr-only">4 ПРОСТЫХ ШАГА</span></div>
+          <div class="step-grid">
+            <article class="step-card">
+              <div class="step-side">
+                <strong>ШАГ 1</strong
+                ><img src="assets/supplied/step-1.svg" alt="" />
+              </div>
+              <div class="step-copy">
+                <h3>ЗАРЕГИСТРИРУЙ</h3>
+                <p>
+                  бонусную карту<br />Купилка/Суперкупилка<br />на сайте
+                  <b>sosedi.by</b> или<br />мобильном приложении,<br />предоставь
+                  согласие на участие<br />в рекламной игре
+                </p>
+              </div>
+            </article>
+            <article class="step-card">
+              <div class="step-side">
+                <strong>ШАГ 2</strong
+                ><img src="assets/supplied/step-2.svg" alt="" />
+              </div>
+              <div class="step-copy">
+                <h3>КУПИ</h3>
+                <p>игровую продукцию<br />с картой<br />Купилка/Суперкупилка</p>
+              </div>
+            </article>
+            <article class="step-card">
+              <div class="step-side">
+                <strong>ШАГ 3</strong
+                ><img src="assets/supplied/step-3.svg" alt="" />
+              </div>
+              <div class="step-copy">
+                <h3>ПОЛУЧИ</h3>
+                <p>игровой код за<br />каждые 2Б</p>
+                <b class="accent"
+                  >Каждый 2-й товар<br />в чеке + 1 игровой код</b
+                >
+              </div>
+            </article>
+            <article class="step-card">
+              <div class="step-side">
+                <strong>ШАГ 4</strong
+                ><img src="assets/supplied/step-4.svg" alt="" />
+              </div>
+              <div class="step-copy">
+                <h3>УЧАСТВУЙ</h3>
+                <p>в розыгрыше<br />призов</p>
+                <a href="#faq-d">ПОЛНЫЕ ПРАВИЛА</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="prizes section-orange" id="prizes-d">
+          <h2 class="section-title two-lines sr-only">
+            КАКИЕ ПРИЗЫ МОЖНО<br />ВЫИГРАТЬ
+          </h2>
+          <div class="prize-grid">
+            <article class="grand-card">
+              <img
+                src="assets/figma-export/prize-main.png"
+                alt="5000 рублей"
+              /><b>ГЛАВНЫЙ ПРИЗ<br />5000 белорусских рублей</b>
+            </article>
+            <div class="prize-carousel prize-carousel--desktop" data-prize-carousel>
+              <div class="prize-viewport">
+                <div class="prize-track">
+                  <article class="camera-card prize-slide">
+                    <span class="count">×6</span
+                    ><img src="assets/figma-export/camera.png" alt="Фотоаппарат" /><b
+                      >Фотоаппарат<br />с мгновенной<br />печатью<br />Fujifilm Instax
+                      Mini 12</b
+                    >
+                  </article>
+                  <article class="prize-slide prize-slide--supplied">
+                    <img src="assets/prize-cards/remaining-prizes.svg#svgView(viewBox(0,0,866,546))" alt="Умная колонка Яндекс Станция Лайт 2" />
+                  </article>
+                  <article class="prize-slide prize-slide--supplied">
+                    <img src="assets/prize-cards/remaining-prizes.svg#svgView(viewBox(906,0,866,546))" alt="Электронный подарочный сертификат магазина Соседи на 50 белорусских рублей" />
+                  </article>
+                  <article class="prize-slide prize-slide--supplied">
+                    <img src="assets/prize-cards/remaining-prizes.svg#svgView(viewBox(1812,0,866,546))" alt="Электронный подарочный сертификат магазина Соседи на 10 белорусских рублей" />
+                  </article>
+                </div>
+              </div>
+              <button class="prize-arrow prize-arrow--prev" type="button" aria-label="Предыдущий приз"></button>
+              <button class="prize-arrow prize-arrow--next" type="button" aria-label="Следующий приз"></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq section-orange" id="faq-d">
+          <h2 class="section-title sr-only">ВОПРОС-ОТВЕТ</h2>
+          <div class="faq-box">
+            <div class="faq-list">
+            <details open>
+              <summary>Когда проходит Рекламная игра?</summary>
+              <p>
+                Рекламная игра проходит в период<span class="mobile-answer-break"><br /></span> с 19 августа по 19 декабря 2026
+                года
+              </p>
+            </details>
+            <details>
+              <summary>Как стать участником Рекламной игры?</summary>
+              <p>
+                Зарегистрируйте бонусную карту и совершайте покупки игровой
+                продукции.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Какие товары необходимо купить, для участия в Рекламной игре?
+              </summary>
+              <p>
+                Товары брендов, представленных в разделе «Игровые продукты».
+              </p>
+            </details>
+            <details>
+              <summary>
+                Что делать, если<span class="mobile-question-break"><br /></span> не начислены<span class="mobile-question-break"><br /></span> игровые коды<span class="mobile-question-break"><br /></span> в личном кабинете?
+              </summary>
+              <p>Обратитесь на горячую линию.</p>
+            </details>
+            <details>
+              <summary>Когда и где проходят розыгрыши?</summary>
+              <p>Розыгрыши проходят каждую неделю.</p>
+            </details>
+            <details>
+              <summary>Как узнать о<span class="mobile-question-break"><br /></span><span class="mobile-question-nowrap"> результатах розыгрыша?</span></summary>
+              <p>Результаты публикуются на этой странице.</p>
+            </details>
+            <details>
+              <summary>Где и когда можно получить приз</summary>
+              <p>Победителю сообщат условия получения приза.</p>
+            </details>
+            </div>
+            <div class="faq-scrollbar" aria-hidden="true"><span></span></div>
+          </div>
+        </section>
+
+        <section class="products section-orange" id="products-d">
+          <h2 class="section-title sr-only">ИГРОВЫЕ ПРОДУКТЫ</h2>
+          <div class="product-carousel" data-product-carousel>
+            <button class="product-arrow product-arrow--prev" type="button" aria-label="Предыдущие товары"></button>
+            <div class="product-viewport" id="product-cards-d">
+              <div class="product-row">
+                <article><img src="assets/reference-svg/desktop.svg#svgView(viewBox(110,4140,413,415))" alt="Продукция Alpen Gold в ассортименте" /></article>
+                <article><img src="assets/reference-svg/desktop.svg#svgView(viewBox(539,4140,413,415))" alt="Продукция Milka в ассортименте" /></article>
+                <article><img src="assets/reference-svg/desktop.svg#svgView(viewBox(968,4140,413,415))" alt="Продукция Picnic в ассортименте" /></article>
+                <article><img src="assets/reference-svg/desktop.svg#svgView(viewBox(1397,4140,413,415))" alt="Продукция Oreo в ассортименте" /></article>
+                <article><img src="assets/product-cards/barni.svg" alt="Продукция Медвежонок Барни в ассортименте" /></article>
+                <article><img src="assets/product-cards/7days.svg" alt="Продукция 7 DAYS в ассортименте" /></article>
+              </div>
+            </div>
+            <button class="product-arrow product-arrow--next" type="button" aria-label="Следующие товары"></button>
+          </div>
+        </section>
+
+        <section class="winners section-orange" id="winners-d">
+          <h2>ПОБЕДИТЕЛИ!</h2>
+        </section>
+        <footer class="footer">
+          <div class="footer-brand">
+            <img src="assets/figma-export/logo.svg" alt="Соседи" /><span
+              >Скачай наше<br />мобильное<br />приложение</span
+            ><img
+              class="qr-image"
+              src="assets/supplied/winners-decor.svg"
+              alt="QR-код"
+            /><img
+              class="stores-image"
+              src="assets/supplied/app-stores.png"
+              alt="Скачать приложение"
+            />
+          </div>
+          <div class="footer-content">
+            <nav>
+              <a href="#rules-d">ПРАВИЛА</a
+              ><a href="#prizes-d">ПРИЗЫ</a
+              ><a href="#faq-d">FAQ</a
+              ><a href="#products-d">ИГРОВЫЕ ПРОДУКТЫ</a
+              ><a href="#winners-d">ПОБЕДИТЕЛИ</a>
+            </nav>
+            <h3>Горячая линия: &nbsp; + 375 (29) 658-50-50</h3>
+            <p>
+              с 10:00 до 17:00 без обеда в будние дни (понедельник – пятница),
+              за исключением выходных и праздничных дней, установленных и
+              объявленных нерабочими в порядке, предусмотренном
+              законодательством.
+            </p>
+            <p>
+              Рекламная игра «Поймай сладкий вайб». Полный срок рекламной игры,
+              включая срок выдачи призов с 19 августа 2026 г. по 19 декабря 2026
+              г.
+            </p>
+          </div>
+        </footer>
+        <img
+          class="ending-art ending-art--tablet"
+          src="assets/reference-svg/tablet.svg#svgView(viewBox(0,3416,1440,768))"
+          alt="Победители и информация рекламной игры"
+        />
+        <img
+          class="ending-art ending-art--desktop"
+          src="assets/reference-svg/desktop.svg#svgView(viewBox(0,4555,1920,1023))"
+          alt="Победители и информация рекламной игры"
+        />
+      </main>
+
+      <main class="canvas canvas--mobile">
+        <header class="m-header">
+          <button
+            class="burger"
+            type="button"
+            aria-label="Открыть меню"
+            data-menu-open
+          >
+            <i></i><i></i><i></i></button
+          ><img src="assets/figma-export/logo.svg" alt="Соседи" />
+        </header>
+        <aside class="menu-preview menu-preview--mobile" aria-hidden="true">
+          <img src="assets/reference-svg/menu-icon.svg" alt="" />
+          <button
+            type="button"
+            class="menu-close"
+            aria-label="Закрыть меню"
+            data-menu-close
+          ></button>
+          <nav aria-label="Меню">
+            <a href="#top">Главная</a><a href="#rules-d">Правила</a
+            ><a href="#prizes-d">Призы</a><a href="#winners-d">Победители</a
+            ><a href="#">Личный кабинет</a>
+          </nav>
+        </aside>
+        <section class="m-hero">
+          <div class="date">С 19.08.2026 ПО 13.10.2026</div>
+          <h1 class="sr-only">Поймай сладкий вайб</h1>
+          <img
+            class="hero-title-art"
+            src="assets/reference-svg/title-mobile.svg"
+            alt=""
+          />
+          <div class="weekly sr-only">Розыгрыши каждую неделю</div>
+          <img
+            class="weekly-art"
+            src="assets/reference-svg/badge-mobile.svg"
+            alt=""
+          />
+          <img
+            class="m-prize"
+            src="assets/extracted-hero/image5_5204_17196.png"
+            alt="5000 рублей"
+          />
+          <img
+            class="m-prize-details"
+            src="assets/extracted-hero/prize-details-mobile.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <div class="m-caption sr-only">ГЛАВНЫЙ ПРИЗ</div>
+          <div class="m-products hero-layers" id="mobile-hero-products" aria-label="Игровая продукция">
+            <img
+              class="hero-item item-milka"
+              src="assets/extracted-hero/image2_5204_17196.png"
+              alt="Milka"
+            />
+            <img
+              class="hero-item item-alpen"
+              src="assets/extracted-hero/image1_5204_17196.png"
+              alt="Alpen Gold"
+            />
+            <img
+              class="hero-item item-picnic"
+              src="assets/extracted-hero/image3_5204_17196.png"
+              alt="Picnic"
+            />
+            <img
+              class="hero-item item-oreo"
+              src="assets/extracted-hero/image0_5204_17196.png"
+              alt="Oreo"
+            />
+            <img
+              class="hero-item item-barni"
+              src="assets/extracted-hero/image4_5204_17196.png"
+              alt="Барни"
+            />
+            <img
+              class="hero-item item-days"
+              src="assets/extracted-hero/image6_5204_17196.png"
+              alt="7 Days"
+            />
+          </div>
+        </section>
+        <svg class="m-orange" viewBox="0 0 375 5273" aria-hidden="true">
+          <path
+            d="M907.688 556V4438.7H-532V873.261C-351.019 974.894 129.357 931.109 268.827 909.674C639.246 819.342 778.1 679.461 907.688 556Z"
+            fill="currentColor"
+          />
+        </svg>
+        <svg class="m-orange-hero-cover" viewBox="0 0 375 1017" aria-hidden="true">
+          <path
+            d="M907.688 556V4438.7H-532V873.261C-351.019 974.894 129.357 931.109 268.827 909.674C639.246 819.342 778.1 679.461 907.688 556Z"
+            fill="currentColor"
+          />
+        </svg>
+        <img
+          class="mobile-headings-art"
+          src="assets/extracted-hero/section-headings-mobile.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          class="mobile-prize-details-art"
+          src="assets/extracted-hero/prize-details-mobile-section.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <section class="m-steps" id="rules-m">
+          <h2 class="sr-only">КАК<br />ПРИНЯТЬ<br />УЧАСТИЕ</h2>
+          <div class="m-label"><span class="sr-only">4 ПРОСТЫХ ШАГА</span></div>
+          <div class="mobile-slider" data-slider>
+            <div class="mobile-track">
+              <article class="m-step">
+                <div>
+                  <b>ШАГ 1</b><img src="assets/supplied/step-1.svg" alt="" />
+                </div>
+                <h3>ЗАРЕГИСТРИРУЙ</h3>
+                <p>
+                  бонусную карту<br />Купилка/Суперкупилка<br />на сайте
+                  sosedi.by или<br />мобильном приложении,<br />предоставь
+                  согласие<br />на участие<br />в рекламной игре
+                </p>
+              </article>
+              <article class="m-step">
+                <div>
+                  <b>ШАГ 2</b><img src="assets/supplied/step-2.svg" alt="" />
+                </div>
+                <h3>КУПИ</h3>
+                <p>игровую продукцию<br />с картой Купилка</p>
+              </article>
+              <article class="m-step">
+                <div>
+                  <b>ШАГ 3</b><img src="assets/supplied/step-3.svg" alt="" />
+                </div>
+                <h3>ПОЛУЧИ</h3>
+                <p>игровой код за<br />каждые 2Б</p>
+                <b class="m-step-accent"
+                  >Каждый 2-й товар<br />в чеке + 1 игровой код</b
+                >
+              </article>
+              <article class="m-step">
+                <div>
+                  <b>ШАГ 4</b><img src="assets/supplied/step-4.svg" alt="" />
+                </div>
+                <h3>УЧАСТВУЙ</h3>
+                <p>в розыгрыше<br />призов</p>
+                <a class="m-full-rules" href="#faq-m">ПОЛНЫЕ ПРАВИЛА</a>
+              </article>
+            </div>
+          </div>
+          <div class="dots">
+            <button class="active"></button><button></button><button></button
+            ><button></button>
+          </div>
+        </section>
+        <section class="m-prizes" id="prizes-m">
+          <h2 class="sr-only">КАКИЕ ПРИЗЫ<br />МОЖНО<br />ВЫИГРАТЬ</h2>
+          <article class="m-grand">
+            <img src="assets/figma-export/prize-main.png" alt="5000 рублей" /><b
+              >ГЛАВНЫЙ ПРИЗ<br />5000<br />белорусских рублей</b
+            >
+          </article>
+          <div class="m-prize-carousel" id="prize-carousel-m" data-prize-carousel>
+            <div class="m-prize-viewport">
+              <div class="m-prize-track">
+                <article class="m-camera m-prize-slide">
+                  <span>×6</span
+                  ><img src="assets/figma-export/camera.png" alt="Фотоаппарат" /><b
+                    >Фотоаппарат<br />с мгновенной<br />печатью<br />Fujifilm Instax
+                    Mini 12</b
+                  >
+                </article>
+                <article class="m-prize-slide m-prize-slide--supplied">
+                  <img src="assets/prize-cards/mobile-prizes.svg?v=2#svgView(viewBox(61.2495,51.2495,335.501,404.501))" alt="Умная колонка Яндекс Станция Лайт 2" />
+                </article>
+                <article class="m-prize-slide m-prize-slide--supplied">
+                  <img src="assets/prize-cards/mobile-prizes.svg?v=2#svgView(viewBox(435.25,51.2495,335.501,404.501))" alt="Электронный подарочный сертификат магазина Соседи на 50 белорусских рублей" />
+                </article>
+                <article class="m-prize-slide m-prize-slide--supplied">
+                  <img src="assets/prize-cards/mobile-prizes.svg?v=2#svgView(viewBox(815.25,51.2495,335.501,404.501))" alt="Электронный подарочный сертификат магазина Соседи на 10 белорусских рублей" />
+                </article>
+              </div>
+            </div>
+            <button class="prize-arrow prize-arrow--prev" type="button" aria-label="Предыдущий приз"></button>
+            <button class="prize-arrow prize-arrow--next" type="button" aria-label="Следующий приз"></button>
+            <div class="prize-dots" aria-hidden="true"><button class="active" tabindex="-1"></button><button tabindex="-1"></button><button tabindex="-1"></button><button tabindex="-1"></button></div>
+          </div>
+        </section>
+        <section class="m-faq" id="faq-m">
+          <h2 class="sr-only">ВОПРОС-<br />ОТВЕТ</h2>
+          <div class="faq-box">
+            <div class="faq-list">
+            <details open>
+              <summary>Когда проходит Рекламная игра?</summary>
+              <p>
+                Рекламная игра проходит в период<span class="mobile-answer-break"><br /></span> с 19 августа по 19 декабря 2026
+                года
+              </p>
+            </details>
+            <details>
+              <summary>Как стать участником Рекламной игры?</summary>
+              <p>Зарегистрируйте карту.</p>
+            </details>
+            <details>
+              <summary>
+                Какие товары необходимо купить, для участия в Рекламной игре?
+              </summary>
+              <p>Игровую продукцию.</p>
+            </details>
+            <details>
+              <summary>
+                Что делать, если<span class="mobile-question-break"><br /></span> не начислены<span class="mobile-question-break"><br /></span> игровые коды<span class="mobile-question-break"><br /></span> в личном кабинете?
+              </summary>
+              <p>Позвоните на горячую линию.</p>
+            </details>
+            <details>
+              <summary>Когда и где проходят розыгрыши?</summary>
+              <p>Каждую неделю.</p>
+            </details>
+            <details>
+              <summary>Как узнать о<span class="mobile-question-break"><br /></span><span class="mobile-question-nowrap"> результатах розыгрыша?</span></summary>
+              <p>На этой странице.</p>
+            </details>
+            <details>
+              <summary>Где и когда можно получить приз?</summary>
+              <p>Мы свяжемся с победителем.</p>
+            </details>
+            </div>
+            <div class="faq-scrollbar" aria-hidden="true"><span></span></div>
+          </div>
+        </section>
+        <section class="m-product-section" id="products-m">
+          <h2 class="sr-only">ИГРОВЫЕ ПРОДУКТЫ</h2>
+          <div class="m-product-carousel" data-product-carousel>
+            <button class="product-arrow product-arrow--prev" type="button" aria-label="Предыдущий товар"></button>
+            <div class="m-product-slider" id="product-cards-m">
+              <div class="m-product-track">
+                <article><img src="assets/reference-svg/desktop.svg#svgView(viewBox(110,4140,413,415))" alt="Продукция Alpen Gold в ассортименте" /></article>
+                <article><img src="assets/reference-svg/desktop.svg#svgView(viewBox(539,4140,413,415))" alt="Продукция Milka в ассортименте" /></article>
+                <article><img src="assets/reference-svg/desktop.svg#svgView(viewBox(968,4140,413,415))" alt="Продукция Picnic в ассортименте" /></article>
+                <article><img src="assets/reference-svg/desktop.svg#svgView(viewBox(1397,4140,413,415))" alt="Продукция Oreo в ассортименте" /></article>
+                <article><img src="assets/product-cards/barni.svg" alt="Продукция Медвежонок Барни в ассортименте" /></article>
+                <article><img src="assets/product-cards/7days.svg" alt="Продукция 7 DAYS в ассортименте" /></article>
+              </div>
+            </div>
+            <button class="product-arrow product-arrow--next" type="button" aria-label="Следующий товар"></button>
+          </div>
+          <div class="dots six" data-product-dots>
+            <button class="active" type="button" aria-label="Товар 1"></button><button type="button" aria-label="Товар 2"></button><button type="button" aria-label="Товар 3"></button
+            ><button type="button" aria-label="Товар 4"></button><button type="button" aria-label="Товар 5"></button><button type="button" aria-label="Товар 6"></button>
+          </div>
+        </section>
+        <section class="m-winners" id="winners-m"><h2>ПОБЕДИТЕЛИ!</h2></section>
+        <footer class="m-footer">
+          <img src="assets/figma-export/logo.svg" alt="Соседи" />
+          <nav>
+            <a href="#rules-m">ПРАВИЛА</a><a href="#prizes-m">ПРИЗЫ</a
+            ><a href="#faq-m">FAQ</a
+            ><a href="#products-m">ИГРОВЫЕ ПРОДУКТЫ</a
+            ><a href="#winners-m">ПОБЕДИТЕЛИ</a>
+          </nav>
+          <p>Горячая линия:</p>
+          <h3>+ 375 (29) 658-50-50</h3>
+          <small
+            >с 10:00 до 17:00 без обеда в будние дни (понедельник – пятница), за
+            исключением выходных и праздничных дней, установленных и объявленных
+            нерабочими в порядке, предусмотренном законодательством.</small
+          ><small
+            >Рекламная игра<br />«Поймай сладкий вайб». Полный<br />срок рекламной
+            игры, включая<br />срок выдачи призов<br />с 19 августа 2026 г.<br />по
+            19 декабря 2026 г.<br />Организатор: ЧРУП «Промофреш»,<br />УНП
+            691757897</small
+          >
+          <div class="app">
+            <b>Скачай наше<br />мобильное<br />приложение</b
+            ><img src="assets/supplied/winners-decor.svg" alt="QR-код" /><img
+              src="assets/supplied/app-stores.png"
+              alt="Скачать приложение"
+            />
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="script.js?v=button-states-47"></script>
+  </body>
+</html>
