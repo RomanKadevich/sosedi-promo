@@ -1653,14 +1653,14 @@ body {
 .menu-preview__products {
   position: absolute;
   z-index: 2;
-  left: 550px;
-  top: 65px;
-  width: 850px;
-  height: 745px;
+  left: 0;
+  top: 0;
+  width: 1440px;
+  height: 871px;
 }
 .menu-preview__decor {
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   inset: 0;
   width: 100%;
   height: 100%;
@@ -1679,12 +1679,12 @@ body {
   object-fit: contain;
   transform-origin: center bottom;
 }
-.menu-product--milka { left: 120px; top: 225px; width: 245px; transform: rotate(-9deg); z-index: 1; }
-.menu-product--alpen { left: 250px; top: 135px; width: 260px; z-index: 2; }
-.menu-product--picnic { left: 500px; top: 66px; width: 175px; transform: rotate(-1deg); z-index: 3; }
-.menu-product--oreo { left: 610px; top: 48px; width: 174px; transform: rotate(8deg); z-index: 2; }
-.menu-product--barni { left: 75px; top: 470px; width: 250px; transform: rotate(-13deg); z-index: 4; }
-.menu-product--days { left: 235px; top: 475px; width: 455px; transform: rotate(-5deg); z-index: 6; }
+.menu-product--milka { left: 625.707px; top: 274.697px; width: 398.193px; height: 549.514px; transform: rotate(3.65718deg); transform-origin: 0 0; z-index: 1; }
+.menu-product--alpen { left: 746.879px; top: 234.935px; width: 420.85px; height: 591.274px; transform: rotate(-4.1571deg); transform-origin: 0 0; z-index: 2; }
+.menu-product--picnic { left: 1066.6px; top: 126.599px; width: 256.446px; height: 621.046px; transform: rotate(14.0599deg); transform-origin: 0 0; z-index: 3; }
+.menu-product--oreo { left: 1083.56px; top: 111.808px; width: 394.198px; height: 739.678px; transform: rotate(9.83558deg); transform-origin: 0 0; z-index: 4; }
+.menu-product--barni { left: 597.182px; top: 542.166px; width: 299.956px; height: 367.546px; transform: rotate(3.65718deg); transform-origin: 0 0; z-index: 5; }
+.menu-product--days { left: 788.279px; top: 523.645px; width: 472.901px; height: 314.102px; transform: rotate(7deg); transform-origin: 0 0; z-index: 6; }
 .menu-preview nav a:focus-visible,
 .menu-preview__cabinet:focus-visible,
 .menu-preview .menu-close:focus-visible {
