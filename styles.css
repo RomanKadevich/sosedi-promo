@@ -2799,15 +2799,15 @@ body.menu-open {
 }
 
 .hero-products .item-milka {
-  --hero-motion-x: -22px;
-  --hero-motion-y: 11px;
-  --hero-motion-rotate: -5deg;
+  --hero-motion-x: -28px;
+  --hero-motion-y: 14px;
+  --hero-motion-rotate: -6.5deg;
 }
 
 .hero-products .item-alpen {
-  --hero-motion-x: -4px;
+  --hero-motion-x: 0px;
   --hero-motion-y: -22px;
-  --hero-motion-rotate: 3deg;
+  --hero-motion-rotate: 0deg;
 }
 
 .hero-products .item-picnic {
@@ -2823,9 +2823,9 @@ body.menu-open {
 }
 
 .hero-products .item-barni {
-  --hero-motion-x: -11px;
-  --hero-motion-y: 3px;
-  --hero-motion-rotate: 2.5deg;
+  --hero-motion-x: -16px;
+  --hero-motion-y: 4px;
+  --hero-motion-rotate: 3.5deg;
 }
 
 .hero-products .item-days {
@@ -2836,15 +2836,15 @@ body.menu-open {
 
 /* The mobile composition is 375/1440 of the reference canvas. */
 .m-products .item-milka {
-  --hero-motion-x: -5.7px;
-  --hero-motion-y: 2.9px;
-  --hero-motion-rotate: -5deg;
+  --hero-motion-x: -7.3px;
+  --hero-motion-y: 3.6px;
+  --hero-motion-rotate: -6.5deg;
 }
 
 .m-products .item-alpen {
-  --hero-motion-x: -1px;
+  --hero-motion-x: 0px;
   --hero-motion-y: -5.7px;
-  --hero-motion-rotate: 3deg;
+  --hero-motion-rotate: 0deg;
 }
 
 .m-products .item-picnic {
@@ -2860,9 +2860,9 @@ body.menu-open {
 }
 
 .m-products .item-barni {
-  --hero-motion-x: -2.9px;
-  --hero-motion-y: 0.8px;
-  --hero-motion-rotate: 2.5deg;
+  --hero-motion-x: -4.2px;
+  --hero-motion-y: 1px;
+  --hero-motion-rotate: 3.5deg;
 }
 
 .m-products .item-days {
