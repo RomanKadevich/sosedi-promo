@@ -73,7 +73,7 @@ document.querySelectorAll("[data-menu-open]").forEach((button) => {
   button.addEventListener("click", () => setMenu(true));
 });
 document
-  .querySelectorAll("[data-menu-close], .menu-preview nav a")
+  .querySelectorAll("[data-menu-close], .menu-preview a")
   .forEach((control) => {
     control.addEventListener("click", () => setMenu(false));
   });
