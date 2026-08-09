@@ -2930,3 +2930,7 @@ body.menu-open {
     rotate: none !important;
   }
 }
+[data-product-carousel],
+[data-prize-carousel] {
+  touch-action: pan-y;
+}
