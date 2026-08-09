@@ -1774,20 +1774,50 @@ body.menu-open {
   white-space: nowrap !important;
   border: 0 !important;
 }
-.hero-title-art {
+.hero-title-lines,
+.hero-title-line {
   position: absolute;
   z-index: 9;
-  left: 0;
-  top: -97px;
-  width: 1440px;
-  height: 4184px;
   pointer-events: none;
 }
-.m-hero .hero-title-art {
-  left: 0;
-  top: -97px;
-  width: 375px;
-  height: 5273px;
+.hero-title-lines {
+  inset: 0;
+}
+.hero .hero-title-line--1 {
+  left: 110px;
+  top: 13px;
+  width: 410px;
+  height: 115px;
+}
+.hero .hero-title-line--2 {
+  left: 78px;
+  top: 91px;
+  width: 485px;
+  height: 115px;
+}
+.hero .hero-title-line--3 {
+  left: 185px;
+  top: 183px;
+  width: 270px;
+  height: 100px;
+}
+.m-hero .hero-title-line--1 {
+  left: 32px;
+  top: 68px;
+  width: 305px;
+  height: 90px;
+}
+.m-hero .hero-title-line--2 {
+  left: 10px;
+  top: 127px;
+  width: 340px;
+  height: 88px;
+}
+.m-hero .hero-title-line--3 {
+  left: 88px;
+  top: 196px;
+  width: 205px;
+  height: 75px;
 }
 .hero .weekly {
   left: 178.463px;
@@ -2685,4 +2715,176 @@ body.menu-open {
   background: #fff;
   color: var(--blue);
   transform: scale(1.1);
+}
+
+/* Hero motion: one-time composition entrance and subtle product drift. */
+@keyframes hero-rise-in {
+  from {
+    opacity: 0;
+    translate: 0 16px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes hero-title-pop-in {
+  0% {
+    opacity: 0;
+    translate: 0 18px;
+  }
+  72% {
+    opacity: 1;
+    translate: 0 -2px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes hero-product-left {
+  0%,
+  100% {
+    translate: 0 0;
+    rotate: 0deg;
+  }
+  46% {
+    translate: -7px -2px;
+    rotate: -1.35deg;
+  }
+  72% {
+    translate: -3px 1px;
+    rotate: 0.35deg;
+  }
+}
+
+@keyframes hero-product-right {
+  0%,
+  100% {
+    translate: 0 0;
+    rotate: 0deg;
+  }
+  46% {
+    translate: 7px -2px;
+    rotate: 1.35deg;
+  }
+  72% {
+    translate: 3px 1px;
+    rotate: -0.35deg;
+  }
+}
+
+@keyframes hero-product-center-up {
+  0%,
+  100% {
+    translate: 0 0;
+    rotate: 0deg;
+  }
+  50% {
+    translate: 0 -8px;
+    rotate: 0.35deg;
+  }
+}
+
+@keyframes hero-product-croissant {
+  0%,
+  100% {
+    translate: 0 0;
+    rotate: 0deg;
+  }
+  38% {
+    translate: 8px -2px;
+    rotate: 0.85deg;
+  }
+  70% {
+    translate: -3px 1px;
+    rotate: -0.45deg;
+  }
+}
+
+.hero-title-line {
+  animation: hero-title-pop-in 720ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-title-line--1 {
+  animation-delay: 80ms;
+}
+
+.hero-title-line--2 {
+  animation-delay: 280ms;
+}
+
+.hero-title-line--3 {
+  animation-delay: 480ms;
+}
+
+.hero .date,
+.m-hero .date {
+  animation: hero-rise-in 720ms cubic-bezier(0.22, 1, 0.36, 1) 620ms both;
+}
+
+.hero .weekly-art,
+.m-hero .weekly-art {
+  animation: hero-rise-in 780ms cubic-bezier(0.22, 1, 0.36, 1) 740ms both;
+}
+
+.hero .hero-prize,
+.m-hero .m-prize {
+  animation: hero-rise-in 900ms cubic-bezier(0.22, 1, 0.36, 1) 860ms both;
+}
+
+.hero .prize-caption,
+.m-hero .m-prize-details {
+  animation: hero-rise-in 760ms cubic-bezier(0.22, 1, 0.36, 1) 980ms both;
+}
+
+.hero-products .item-milka,
+.m-products .item-milka {
+  animation: hero-product-left 4.6s ease-in-out 150ms infinite;
+}
+
+.hero-products .item-alpen,
+.m-products .item-alpen {
+  animation: hero-product-center-up 4.1s ease-in-out 100ms infinite;
+}
+
+.hero-products .item-picnic,
+.m-products .item-picnic {
+  animation: hero-product-right 3.7s ease-in-out 300ms infinite;
+}
+
+.hero-products .item-oreo,
+.m-products .item-oreo {
+  animation: hero-product-right 4.9s ease-in-out 550ms infinite;
+}
+
+.hero-products .item-barni,
+.m-products .item-barni {
+  animation: hero-product-left 3.9s ease-in-out 400ms infinite;
+}
+
+.hero-products .item-days,
+.m-products .item-days {
+  animation: hero-product-croissant 4.4s ease-in-out 200ms infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-title-line,
+  .hero .date,
+  .m-hero .date,
+  .hero .weekly-art,
+  .m-hero .weekly-art,
+  .hero .hero-prize,
+  .m-hero .m-prize,
+  .hero .prize-caption,
+  .m-hero .m-prize-details,
+  .hero-products .hero-item,
+  .m-products .hero-item {
+    animation: none !important;
+    opacity: 1 !important;
+    translate: none !important;
+    rotate: none !important;
+  }
 }
