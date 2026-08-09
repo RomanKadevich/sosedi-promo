@@ -2792,10 +2792,49 @@ body.menu-open {
   animation: hero-rise-in 760ms cubic-bezier(0.22, 1, 0.36, 1) 980ms both;
 }
 
-.hero-products .hero-item,
-.m-products .hero-item {
+.hero-products .hero-motion-item,
+.m-products .hero-motion-item {
+  position: absolute;
+  display: block;
   animation: hero-product-fan 1.8s cubic-bezier(0.45, 0, 0.55, 1) infinite;
   will-change: translate, rotate;
+}
+
+/* Keep the exported layout rotation on the image and animate its wrapper
+   around the visual centre. This prevents the packs from hinging at the top. */
+.canvas--desktop .hero-products .hero-motion-item,
+.m-products .hero-motion-item {
+  transform: none;
+  transform-origin: 50% 50%;
+}
+
+.hero-motion-item > .hero-item {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transform-origin: 0 0;
+}
+
+.item-milka > .hero-item,
+.item-barni > .hero-item {
+  transform: rotate(3.65718deg);
+}
+
+.item-alpen > .hero-item {
+  transform: rotate(-4.1571deg);
+}
+
+.item-picnic > .hero-item {
+  transform: rotate(14.0599deg);
+}
+
+.item-oreo > .hero-item {
+  transform: rotate(9.83558deg);
+}
+
+.item-days > .hero-item {
+  transform: rotate(7deg);
 }
 
 .hero-products .item-milka {
@@ -2823,9 +2862,10 @@ body.menu-open {
 }
 
 .hero-products .item-barni {
-  --hero-motion-x: -16px;
-  --hero-motion-y: 4px;
-  --hero-motion-rotate: 3.5deg;
+  --hero-motion-x: 0px;
+  --hero-motion-y: 0px;
+  --hero-motion-rotate: -3deg;
+  transform-origin: 46% 50%;
 }
 
 .hero-products .item-days {
@@ -2860,9 +2900,10 @@ body.menu-open {
 }
 
 .m-products .item-barni {
-  --hero-motion-x: -4.2px;
-  --hero-motion-y: 1px;
-  --hero-motion-rotate: 3.5deg;
+  --hero-motion-x: 0px;
+  --hero-motion-y: 0px;
+  --hero-motion-rotate: -3deg;
+  transform-origin: 46% 50%;
 }
 
 .m-products .item-days {
@@ -2881,8 +2922,8 @@ body.menu-open {
   .m-hero .m-prize,
   .hero .prize-caption,
   .m-hero .m-prize-details,
-  .hero-products .hero-item,
-  .m-products .hero-item {
+  .hero-products .hero-motion-item,
+  .m-products .hero-motion-item {
     animation: none !important;
     opacity: 1 !important;
     translate: none !important;
