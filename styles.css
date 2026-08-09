@@ -2717,7 +2717,7 @@ body.menu-open {
   transform: scale(1.1);
 }
 
-/* Hero motion: one-time composition entrance and subtle product drift. */
+/* Hero motion: one-time composition entrance and the reference's product fan. */
 @keyframes hero-rise-in {
   from {
     opacity: 0;
@@ -2744,63 +2744,15 @@ body.menu-open {
   }
 }
 
-@keyframes hero-product-left {
-  0%,
-  100% {
-    translate: 0 0;
-    rotate: 0deg;
-  }
-  46% {
-    translate: -7px -2px;
-    rotate: -1.35deg;
-  }
-  72% {
-    translate: -3px 1px;
-    rotate: 0.35deg;
-  }
-}
-
-@keyframes hero-product-right {
-  0%,
-  100% {
-    translate: 0 0;
-    rotate: 0deg;
-  }
-  46% {
-    translate: 7px -2px;
-    rotate: 1.35deg;
-  }
-  72% {
-    translate: 3px 1px;
-    rotate: -0.35deg;
-  }
-}
-
-@keyframes hero-product-center-up {
+@keyframes hero-product-fan {
   0%,
   100% {
     translate: 0 0;
     rotate: 0deg;
   }
   50% {
-    translate: 0 -8px;
-    rotate: 0.35deg;
-  }
-}
-
-@keyframes hero-product-croissant {
-  0%,
-  100% {
-    translate: 0 0;
-    rotate: 0deg;
-  }
-  38% {
-    translate: 8px -2px;
-    rotate: 0.85deg;
-  }
-  70% {
-    translate: -3px 1px;
-    rotate: -0.45deg;
+    translate: var(--hero-motion-x) var(--hero-motion-y);
+    rotate: var(--hero-motion-rotate);
   }
 }
 
@@ -2840,34 +2792,83 @@ body.menu-open {
   animation: hero-rise-in 760ms cubic-bezier(0.22, 1, 0.36, 1) 980ms both;
 }
 
-.hero-products .item-milka,
+.hero-products .hero-item,
+.m-products .hero-item {
+  animation: hero-product-fan 1.8s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  will-change: translate, rotate;
+}
+
+.hero-products .item-milka {
+  --hero-motion-x: -22px;
+  --hero-motion-y: 11px;
+  --hero-motion-rotate: -5deg;
+}
+
+.hero-products .item-alpen {
+  --hero-motion-x: -4px;
+  --hero-motion-y: -22px;
+  --hero-motion-rotate: 3deg;
+}
+
+.hero-products .item-picnic {
+  --hero-motion-x: 22px;
+  --hero-motion-y: 24px;
+  --hero-motion-rotate: 12.5deg;
+}
+
+.hero-products .item-oreo {
+  --hero-motion-x: 20px;
+  --hero-motion-y: 14px;
+  --hero-motion-rotate: 7.5deg;
+}
+
+.hero-products .item-barni {
+  --hero-motion-x: -11px;
+  --hero-motion-y: 3px;
+  --hero-motion-rotate: 2.5deg;
+}
+
+.hero-products .item-days {
+  --hero-motion-x: 6px;
+  --hero-motion-y: -8px;
+  --hero-motion-rotate: 8.5deg;
+}
+
+/* The mobile composition is 375/1440 of the reference canvas. */
 .m-products .item-milka {
-  animation: hero-product-left 4.6s ease-in-out 150ms infinite;
+  --hero-motion-x: -5.7px;
+  --hero-motion-y: 2.9px;
+  --hero-motion-rotate: -5deg;
 }
 
-.hero-products .item-alpen,
 .m-products .item-alpen {
-  animation: hero-product-center-up 4.1s ease-in-out 100ms infinite;
+  --hero-motion-x: -1px;
+  --hero-motion-y: -5.7px;
+  --hero-motion-rotate: 3deg;
 }
 
-.hero-products .item-picnic,
 .m-products .item-picnic {
-  animation: hero-product-right 3.7s ease-in-out 300ms infinite;
+  --hero-motion-x: 5.7px;
+  --hero-motion-y: 6.25px;
+  --hero-motion-rotate: 12.5deg;
 }
 
-.hero-products .item-oreo,
 .m-products .item-oreo {
-  animation: hero-product-right 4.9s ease-in-out 550ms infinite;
+  --hero-motion-x: 5.2px;
+  --hero-motion-y: 3.6px;
+  --hero-motion-rotate: 7.5deg;
 }
 
-.hero-products .item-barni,
 .m-products .item-barni {
-  animation: hero-product-left 3.9s ease-in-out 400ms infinite;
+  --hero-motion-x: -2.9px;
+  --hero-motion-y: 0.8px;
+  --hero-motion-rotate: 2.5deg;
 }
 
-.hero-products .item-days,
 .m-products .item-days {
-  animation: hero-product-croissant 4.4s ease-in-out 200ms infinite;
+  --hero-motion-x: 1.6px;
+  --hero-motion-y: -2.1px;
+  --hero-motion-rotate: 8.5deg;
 }
 
 @media (prefers-reduced-motion: reduce) {
