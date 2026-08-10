@@ -1528,10 +1528,7 @@ body {
   background: var(--orange);
   clip-path: polygon(0 55%, 100% 0, 100% 100%, 0 100%);
 }
-.menu-preview--tablet::after {
-  height: 360px;
-  clip-path: polygon(0 89%, 100% 0, 100% 100%, 0 100%);
-}
+.menu-preview--tablet::after { content: none; }
 .menu-preview--mobile::after {
   height: 206px;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
@@ -1652,12 +1649,25 @@ body {
 }
 .menu-preview__products {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   left: 0;
   top: 0;
   width: 1440px;
   height: 871px;
 }
+.menu-preview__background,
+.menu-preview__foreground,
+.menu-preview__orange-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.menu-preview__background { z-index: 0; }
+.menu-preview__orange-layer { z-index: 2; }
+.menu-preview__orange-layer path { fill: var(--orange); }
+.menu-preview__foreground { z-index: 3; }
 .menu-preview__decor {
   position: absolute;
   z-index: 1;
@@ -1679,12 +1689,20 @@ body {
   object-fit: contain;
   transform-origin: center bottom;
 }
-.menu-product--milka { left: 625.707px; top: 274.697px; width: 398.193px; height: 549.514px; transform: rotate(3.65718deg); transform-origin: 0 0; z-index: 1; }
-.menu-product--alpen { left: 746.879px; top: 234.935px; width: 420.85px; height: 591.274px; transform: rotate(-4.1571deg); transform-origin: 0 0; z-index: 2; }
-.menu-product--picnic { left: 1066.6px; top: 126.599px; width: 256.446px; height: 621.046px; transform: rotate(14.0599deg); transform-origin: 0 0; z-index: 3; }
-.menu-product--oreo { left: 1083.56px; top: 111.808px; width: 394.198px; height: 739.678px; transform: rotate(9.83558deg); transform-origin: 0 0; z-index: 4; }
-.menu-product--barni { left: 597.182px; top: 542.166px; width: 299.956px; height: 367.546px; transform: rotate(3.65718deg); transform-origin: 0 0; z-index: 5; }
-.menu-product--days { left: 788.279px; top: 523.645px; width: 472.901px; height: 314.102px; transform: rotate(7deg); transform-origin: 0 0; z-index: 6; }
+.menu-product--group {
+  left: 548px;
+  top: 34px;
+  width: 892px;
+  height: 817px;
+  z-index: 1;
+}
+.menu-product--days {
+  left: 724px;
+  top: 455px;
+  width: 508px;
+  height: 370px;
+  z-index: 4;
+}
 .menu-preview nav a:focus-visible,
 .menu-preview__cabinet:focus-visible,
 .menu-preview .menu-close:focus-visible {
