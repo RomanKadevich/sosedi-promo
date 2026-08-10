@@ -3,6 +3,44 @@
   src: url("assets/fonts/a-FuturicaNord-Regular.ttf") format("truetype");
   font-display: swap;
 }
+@font-face {
+  font-family: "nbrb";
+  src:
+    url("assets/fonts/nbrb.woff2") format("woff2"),
+    url("assets/fonts/nbrb.ttf") format("truetype"),
+    url("assets/fonts/nbrb.woff") format("woff");
+  font-display: swap;
+  unicode-range: U+E901, U+42, U+59, U+4E;
+}
+.nbrb-icon {
+  font-family: "nbrb" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: normal;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+}
+.currency-amount {
+  white-space: nowrap;
+}
+.nbrb-inline {
+  display: inline-block;
+  margin-left: 0.035em;
+  font-size: 1.42em;
+  line-height: 1;
+  vertical-align: -0.04em;
+  -webkit-text-stroke: 0.012em currentColor;
+}
 :root {
   --orange: #ee6f04;
   --blue: #1580c3;
@@ -27,7 +65,7 @@ body {
 }
 
 .footer-content h3 a,
-.m-footer h3 a {
+.m-footer-phone a {
   color: inherit;
   text-decoration: none;
 }
@@ -174,6 +212,17 @@ body {
   width: 629px;
   height: 362px;
   object-fit: contain;
+}
+.hero-byn-symbol {
+  position: absolute;
+  z-index: 2;
+  left: 516px;
+  top: 378px;
+  width: 42px;
+  height: 60px;
+  color: var(--blue);
+  font-size: 60px;
+  pointer-events: none;
 }
 .prize-caption {
   position: absolute;
@@ -399,6 +448,16 @@ body {
   object-fit: cover;
   object-position: center 43%;
 }
+.grand-card .card-byn-symbol {
+  position: absolute;
+  z-index: 2;
+  left: 540px;
+  top: 83px;
+  width: 48px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  object-fit: contain;
+}
 .grand-card b {
   position: absolute;
   bottom: 43px;
@@ -537,13 +596,24 @@ body {
   line-height: 17px;
   font-weight: 400;
 }
+.faq-box p a {
+  color: #1580c3;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
 .faq-box details[open] {
-  min-height: 52.68px;
+  min-height: 0;
 }
 .faq-box details[open] summary {
-  min-height: 24px;
-  align-items: flex-start;
+  min-height: 0;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+.faq-box details[open] p {
   padding-top: 1px;
+  padding-bottom: 7px;
 }
 .mobile-answer-break {
   display: none;
@@ -922,17 +992,17 @@ body {
   text-align: center;
   flex: none;
 }
-.m-step > div {
+.m-step > div:first-child {
   height: 213px;
   background: var(--blue);
   color: #fff;
   padding-top: 25px;
 }
-.m-step > div b {
+.m-step > div:first-child b {
   display: block;
   font-size: 24px;
 }
-.m-step > div span {
+.m-step > div:first-child span {
   display: block;
   width: 86px;
   height: 86px;
@@ -942,7 +1012,7 @@ body {
   font-size: 50px;
   line-height: 78px;
 }
-.m-step h3 {
+.m-step-title {
   margin: 31px 0 20px;
   color: var(--orange);
   font-family: Futurica, Impact, sans-serif;
@@ -1166,7 +1236,7 @@ body {
   top: 4284px;
   height: 60px;
 }
-.m-winners h2 {
+.m-winners-title {
   width: 356px;
   height: 60px;
   margin: 0 auto;
@@ -1185,8 +1255,8 @@ body {
   text-align: center;
   transform: rotate(-4deg);
 }
-.m-winners h2::before,
-.m-winners h2::after {
+.m-winners-title::before,
+.m-winners-title::after {
   content: "";
   position: absolute;
   top: 14px;
@@ -1194,10 +1264,10 @@ body {
   height: 32px;
   background: url("assets/ui/winner-rays.svg") center/contain no-repeat;
 }
-.m-winners h2::before {
+.m-winners-title::before {
   left: 29px;
 }
-.m-winners h2::after {
+.m-winners-title::after {
   right: 29px;
   transform: scaleX(-1);
 }
@@ -1238,7 +1308,7 @@ body {
   font-weight: 400;
   line-height: 1.1;
 }
-.m-footer h3 {
+.m-footer-phone {
   margin: 0 0 30px;
   font-size: 24px;
   line-height: 1;
@@ -1362,28 +1432,40 @@ body {
   margin: -2px auto 0;
   object-fit: contain;
 }
-.footer-brand .qr-image {
+.app-download-link {
+  display: block;
+  line-height: 0;
+}
+.footer-brand .qr-link {
   position: absolute;
   left: 148px;
   top: 108px;
   width: 80px;
   height: 80px;
 }
-.footer-brand .stores-image {
+.footer-brand .stores-link {
   position: absolute;
   left: 236px;
   top: 108px;
   width: 76px;
   height: 80px;
+}
+.footer-brand .qr-image,
+.footer-brand .stores-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.footer-brand .stores-image {
   object-fit: contain;
 }
-.m-step > div img {
+.m-step > div:first-child img {
   display: block;
   width: 105px;
   height: 105px;
   margin: 18px auto 0;
 }
-.m-step > div span {
+.m-step > div:first-child span {
   display: none;
 }
 .m-product-slider article > .product-logo {
@@ -1403,11 +1485,11 @@ body {
 .m-footer .app {
   gap: 13px;
 }
-.m-footer .app > img:first-of-type {
+.m-footer .app > .app-download-link:first-of-type img {
   width: 80px;
   height: 80px;
 }
-.m-footer .app > img:last-of-type {
+.m-footer .app > .app-download-link:last-of-type img {
   width: 76px;
   height: 80px;
   object-fit: contain;
@@ -2057,6 +2139,17 @@ body.menu-open {
   top: 277px;
   width: 100%;
 }
+.m-grand .card-byn-symbol {
+  position: absolute;
+  z-index: 5;
+  left: auto;
+  right: 24px;
+  top: 154px;
+  width: 36px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  object-fit: contain;
+}
 .m-grand b {
   bottom: 44px;
   font-family: Montserrat, Arial, sans-serif;
@@ -2259,11 +2352,11 @@ body.menu-open {
 }
 .m-faq .faq-box details:nth-child(3),
 .m-faq .faq-box details:nth-child(4) {
-  min-height: 98.5px;
+  min-height: 61.5px;
 }
 .m-faq .faq-box details:nth-child(3) summary,
 .m-faq .faq-box details:nth-child(4) summary {
-  min-height: 98.5px;
+  min-height: 61.5px;
 }
 .m-faq .faq-box details:nth-child(5) {
   min-height: 64.5px;
@@ -2274,6 +2367,20 @@ body.menu-open {
 .m-faq .faq-box details:nth-child(7),
 .m-faq .faq-box details:nth-child(7) summary {
   min-height: 46px;
+}
+
+/* Open items follow their real content height. This override intentionally
+   comes after the closed-row layout rules above. */
+.m-faq .faq-box details[open] {
+  min-height: 0;
+}
+.m-faq .faq-box details[open] summary {
+  min-height: 0;
+  padding: 6px 90px 4px 1.53px;
+}
+.m-faq .faq-box details[open] p {
+  padding-top: 1px;
+  padding-bottom: 8px;
 }
 .m-faq .faq-scrollbar {
   left: 313.251px;
@@ -2291,7 +2398,7 @@ body.menu-open {
   width: 310px;
   height: 312px;
 }
-.m-winners h2 {
+.m-winners-title {
   width: 356px;
   height: 60px;
   margin-left: 9.5px;
@@ -2624,7 +2731,7 @@ body.menu-open {
 .step-copy a,
 .m-full-rules,
 .winners h2,
-.m-winners h2 {
+.m-winners-title {
   transition:
     transform 180ms ease,
     background-color 180ms ease,
@@ -2643,11 +2750,11 @@ body.menu-open {
 .step-copy a,
 .m-full-rules,
 .winners h2,
-.m-winners h2 {
+.m-winners-title {
   transform-origin: center;
 }
 .winners h2,
-.m-winners h2 {
+.m-winners-title {
   position: relative;
   z-index: 1;
   cursor: pointer;
@@ -2664,15 +2771,15 @@ body.menu-open {
 .m-winners {
   height: 60px;
 }
-.m-winners h2 {
+.m-winners-title {
   width: 356px;
   height: 60px;
   border-radius: 30px;
 }
 .winners h2::before,
 .winners h2::after,
-.m-winners h2::before,
-.m-winners h2::after {
+.m-winners-title::before,
+.m-winners-title::after {
   background: #fff;
   -webkit-mask: url("assets/ui/winner-rays.svg") center/contain no-repeat;
   mask: url("assets/ui/winner-rays.svg") center/contain no-repeat;
@@ -2692,8 +2799,8 @@ body.menu-open {
   right: 35px;
   transform: scaleX(-1);
 }
-.m-winners h2::before,
-.m-winners h2::after {
+.m-winners-title::before,
+.m-winners-title::after {
   top: 14px;
 }
 @media (hover: hover) {
@@ -2703,7 +2810,7 @@ body.menu-open {
     transform: scale(1.1);
   }
   .winners h2:hover,
-  .m-winners h2:hover {
+  .m-winners-title:hover {
     transform: rotate(-4deg) scale(1.1);
   }
 }
@@ -2721,7 +2828,7 @@ body.menu-open {
   transform: scale(1.1);
 }
 .winners h2:active,
-.m-winners h2:active {
+.m-winners-title:active {
   border-color: var(--blue);
   background: #fff;
   color: var(--blue);
@@ -2729,8 +2836,8 @@ body.menu-open {
 }
 .winners h2:active::before,
 .winners h2:active::after,
-.m-winners h2:active::before,
-.m-winners h2:active::after {
+.m-winners-title:active::before,
+.m-winners-title:active::after {
   background: var(--blue);
 }
 
@@ -2812,6 +2919,7 @@ body.menu-open {
 }
 
 .hero .hero-prize,
+.hero .hero-byn-symbol,
 .m-hero .m-prize {
   animation: hero-rise-in 900ms cubic-bezier(0.22, 1, 0.36, 1) 860ms both;
 }
@@ -2948,6 +3056,7 @@ body.menu-open {
   .hero .weekly-art,
   .m-hero .weekly-art,
   .hero .hero-prize,
+  .hero .hero-byn-symbol,
   .m-hero .m-prize,
   .hero .prize-caption,
   .m-hero .m-prize-details,
@@ -2962,4 +3071,29 @@ body.menu-open {
 [data-product-carousel],
 [data-prize-carousel] {
   touch-action: pan-y;
+}
+
+/* Text links inside the registration copy stay inline and do not inherit the
+   large button treatment used by the full-rules action. */
+.step-copy a.inline-site-link,
+.m-step a.inline-site-link,
+.step-copy a.inline-site-link:hover,
+.m-step a.inline-site-link:hover,
+.step-copy a.inline-site-link:active,
+.m-step a.inline-site-link:active {
+  display: inline;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+  transform: none;
+  transition: none;
 }

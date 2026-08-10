@@ -3,8 +3,48 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="Рекламная игра «Поймай сладкий вайб»" />
-    <title>Поймай сладкий вайб</title>
+    <title>Рекламная игра в магазинах Соседи «Поймай сладкий вайб».</title>
+    <meta
+      name="description"
+      content="Рекламная игра в Соседях с 19 августа по 13 октября 2026 года. Главный приз — 5 000 BYN!"
+    />
+    <link rel="canonical" href="https://romankadevich.github.io/sosedi-promo/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="Соседи" />
+    <meta
+      property="og:title"
+      content="Рекламная игра в магазинах Соседи «Поймай сладкий вайб»."
+    />
+    <meta
+      property="og:description"
+      content="Рекламная игра в Соседях с 19 августа по 13 октября 2026 года. Главный приз — 5 000 BYN!"
+    />
+    <meta property="og:url" content="https://romankadevich.github.io/sosedi-promo/" />
+    <meta
+      property="og:image"
+      content="https://romankadevich.github.io/sosedi-promo/assets/og-banner.webp"
+    />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta
+      property="og:image:alt"
+      content="Рекламная игра Соседи «Поймай сладкий вайб»"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Рекламная игра в магазинах Соседи «Поймай сладкий вайб»."
+    />
+    <meta
+      name="twitter:description"
+      content="Рекламная игра в Соседях с 19 августа по 13 октября 2026 года. Главный приз — 5 000 BYN!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://romankadevich.github.io/sosedi-promo/assets/og-banner.webp"
+    />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +52,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=button-states-47" />
+    <link rel="stylesheet" href="styles.css?v=mobile-faq-steps-byn-62" />
   </head>
   <body>
     <div class="stage">
@@ -34,7 +74,7 @@
           <a class="logo-home" href="./" aria-label="На главную"
             ><img class="logo" src="assets/figma-export/logo.svg" alt="Соседи"
           /></a>
-          <a class="cabinet" href="#">Личный кабинет</a>
+          <a class="cabinet" href="https://sosedi.by/personal/">Личный кабинет</a>
         </header>
         <aside class="menu-preview menu-preview--tablet" aria-hidden="true">
           <img
@@ -101,6 +141,7 @@
             src="assets/extracted-hero/image5_5204_17196.png"
             alt="Главный приз 5000 белорусских рублей"
           />
+          <span class="hero-byn-symbol nbrb-icon" aria-hidden="true">BYN</span>
           <div class="prize-caption">ГЛАВНЫЙ ПРИЗ</div>
           <div class="hero-products hero-layers" aria-label="Игровая продукция">
             <div class="hero-motion-item item-milka">
@@ -165,7 +206,7 @@
                 <h3>ЗАРЕГИСТРИРУЙ</h3>
                 <p>
                   бонусную карту<br />Купилка/Суперкупилка<br />на сайте
-                  <b>sosedi.by</b> или<br />мобильном приложении,<br />предоставь
+                  <b><a class="inline-site-link" href="https://sosedi.by/">sosedi.by</a></b> или<br />мобильном приложении,<br />предоставь
                   согласие на участие<br />в рекламной игре
                 </p>
               </div>
@@ -187,7 +228,12 @@
               </div>
               <div class="step-copy">
                 <h3>ПОЛУЧИ</h3>
-                <p>игровой код за<br />каждые 2Б</p>
+                <p>
+                  игровой код за<br />каждые
+                  <span class="currency-amount"
+                    >2<span class="nbrb-icon nbrb-inline">BYN</span></span
+                  >
+                </p>
                 <b class="accent"
                   >Каждый 2-й товар<br />в чеке + 1 игровой код</b
                 >
@@ -201,7 +247,12 @@
               <div class="step-copy">
                 <h3>УЧАСТВУЙ</h3>
                 <p>в розыгрыше<br />призов</p>
-                <a href="#faq-d">ПОЛНЫЕ ПРАВИЛА</a>
+                <a
+                  href="assets/documents/polnye-pravila.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >ПОЛНЫЕ ПРАВИЛА</a
+                >
               </div>
             </article>
           </div>
@@ -216,6 +267,11 @@
               <img
                 src="assets/figma-export/prize-main.png"
                 alt="5000 рублей"
+              /><img
+                class="card-byn-symbol"
+                src="assets/ui/byn-symbol.svg"
+                alt=""
+                aria-hidden="true"
               /><b>ГЛАВНЫЙ ПРИЗ<br />5000 белорусских рублей</b>
             </article>
             <div class="prize-carousel prize-carousel--desktop" data-prize-carousel>
@@ -252,42 +308,87 @@
             <details open>
               <summary>Когда проходит Рекламная игра?</summary>
               <p>
-                Рекламная игра проходит в период<span class="mobile-answer-break"><br /></span> с 19 августа по 19 декабря 2026
-                года
+                Стать участником Рекламной игры можно в период с 19 августа по
+                13 октября 2026 года включительно.
+              </p>
+            </details>
+            <details>
+              <summary>Какой период проведения Рекламной игры?</summary>
+              <p>
+                Период проведения Рекламной игры, включая срок выдачи выигрышей
+                и публикации результатов проведения с 19 августа 2026 года по
+                19 декабря 2026 года.
               </p>
             </details>
             <details>
               <summary>Как стать участником Рекламной игры?</summary>
               <p>
-                Зарегистрируйте бонусную карту и совершайте покупки игровой
-                продукции.
+                Для участия в Рекламной игре в период с 00:00:00 19.08.2026 по
+                23:59:59 13.10.2026 (включительно) необходимо выполнить
+                следующие условия:<br />
+                1. Быть зарегистрированным или пройти регистрацию (создать
+                личный кабинет) на Интернет-сайте <a href="https://sosedi.by/">sosedi.by</a> или в Мобильном
+                приложении «Соседи всегда под рукой».<br />
+                2. Проверить корректность заполнения своих персональных данных и
+                подтвердить согласие на участие в Рекламной игре в личном
+                кабинете.<br />
+                3. В период с 19 августа по 13 октября 2026 года приобрести
+                Игровые продукты на сумму от 2 (Двух) и более белорусских рублей
+                в одном чеке в магазинах «Соседи», «Соседи экспресс» или «Умный
+                выбор» на территории Республики Беларусь либо на сайте
+                интернет-магазина <a href="https://sosedi-dostavka.by/">sosedi-dostavka.by</a>, применив при расчёте Карту
+                «Купилка» или «Суперкупилка».
               </p>
             </details>
             <details>
-              <summary>
-                Какие товары необходимо купить, для участия в Рекламной игре?
-              </summary>
+              <summary>Что делать, если игровые коды не начислены в Личном кабинете?</summary>
               <p>
-                Товары брендов, представленных в разделе «Игровые продукты».
+                Необходимо проверить:<br />
+                — зарегистрирована ли Карта «Купилка» или «Суперкупилка» на
+                сайте <a href="https://sosedi.by/">sosedi.by</a> или в Мобильном приложении;<br />
+                — есть ли согласие на участие в Рекламной игре в Личном
+                кабинете;<br />
+                — есть ли в чеке игровые продукты на сумму не менее 2 BYN (с
+                учетом скидок, предоставляемых по бонусной программе «Купилка»
+                или «Суперкупилка», и другим скидочным и(или) бонусным
+                программам).<br /><br />
+                Если все пункты соблюдены, но код не начислен, обратитесь на
+                инфолинию сети «Соседи» по номеру <a href="tel:7290">7290</a>.
               </p>
             </details>
             <details>
-              <summary>
-                Что делать, если<span class="mobile-question-break"><br /></span> не начислены<span class="mobile-question-break"><br /></span> игровые коды<span class="mobile-question-break"><br /></span> в личном кабинете?
-              </summary>
-              <p>Обратитесь на горячую линию.</p>
+              <summary>Кто может принимать участие в Рекламной игре?</summary>
+              <p>
+                К участию в Рекламной игре приглашаются все граждане Республики
+                Беларусь, а также иностранные граждане и лица без гражданства,
+                являющиеся держателями Карты/Виртуальной карты Участника и
+                зарегистрированные в личном кабинете на сайте
+                <a href="https://sosedi.by/igra-2/">sosedi.by/igra-2/</a>, заполнившие в нем достоверные актуальные
+                персональные данные.
+              </p>
             </details>
             <details>
-              <summary>Когда и где проходят розыгрыши?</summary>
-              <p>Розыгрыши проходят каждую неделю.</p>
+              <summary>Какие продукты необходимо приобрести, чтобы принять участие в Рекламной игре?</summary>
+              <p>
+                Список товаров, участвующих в Рекламной игре, указан
+                <a href="assets/documents/spisok-igrovyh-tovarov.pdf" target="_blank" rel="noopener noreferrer">здесь</a>.
+              </p>
             </details>
             <details>
-              <summary>Как узнать о<span class="mobile-question-break"><br /></span><span class="mobile-question-nowrap"> результатах розыгрыша?</span></summary>
-              <p>Результаты публикуются на этой странице.</p>
-            </details>
-            <details>
-              <summary>Где и когда можно получить приз</summary>
-              <p>Победителю сообщат условия получения приза.</p>
+              <summary>Как победители узнают о выигрыше?</summary>
+              <p>
+                Победители извещаются о выигрыше в срок не позднее восьми суток
+                от даты проведения соответствующего розыгрыша звонком на номер
+                телефона, указанный при регистрации на Интернет-сайте или в
+                Мобильном приложении, а также в Личном кабинете Участника на
+                Сайте. Также Организатор оставляет за собой право дополнительно
+                уведомлять Победителей о выигрыше посредством отправки
+                SMS-сообщения на номер мобильного телефона Победителя и/или
+                почтовым уведомлением на адрес, указанный в личном кабинете при
+                регистрации. При извещении Победителя о выигрыше ему сообщается
+                дата признания его Победителем в соответствии с
+                <a href="assets/documents/polnye-pravila.pdf" target="_blank" rel="noopener noreferrer">Правилами</a>.
+              </p>
             </details>
             </div>
             <div class="faq-scrollbar" aria-hidden="true"><span></span></div>
@@ -321,15 +422,27 @@
               ><img src="assets/figma-export/logo.svg" alt="Соседи"
             /></a><span
               >Скачай наше<br />мобильное<br />приложение</span
-            ><img
-              class="qr-image"
-              src="assets/supplied/winners-decor.svg"
-              alt="QR-код"
-            /><img
-              class="stores-image"
-              src="assets/supplied/app-stores.png"
-              alt="Скачать приложение"
-            />
+            ><a
+              class="app-download-link qr-link"
+              href="https://onelink.to/sosedi.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Скачать приложение Соседи по QR-коду"
+              ><img
+                class="qr-image"
+                src="assets/supplied/winners-decor.svg"
+                alt="QR-код для скачивания приложения Соседи"
+            /></a><a
+              class="app-download-link stores-link"
+              href="https://onelink.to/sosedi.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Скачать приложение Соседи"
+              ><img
+                class="stores-image"
+                src="assets/supplied/app-stores.png"
+                alt="App Store, Google Play и AppGallery"
+            /></a>
           </div>
           <div class="footer-content">
             <nav>
@@ -387,7 +500,7 @@
             ><a href="#products-m">Игровые продукты</a
             ><a href="#winners-m">Победители</a>
           </nav>
-          <a class="menu-preview__cabinet" href="#">Личный кабинет</a>
+          <a class="menu-preview__cabinet" href="https://sosedi.by/personal/">Личный кабинет</a>
           <svg class="menu-preview__decor menu-preview__decor--mobile" viewBox="0 0 375 800" aria-hidden="true">
             <path d="M292 200c8-15 31-8 31 9 0 19-31 33-31 33s-31-14-31-33c0-17 23-24 31-9z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
             <path class="on-orange" d="M257 664l9 20 23 2-18 15 6 23-20-12-20 12 6-23-18-15 23-2zM96 662c3 13 8 18 21 20-13 3-18 8-21 21-3-13-8-18-21-21 13-2 18-7 21-20z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
@@ -395,7 +508,7 @@
         </aside>
         <section class="m-hero">
           <div class="date">С 19.08.2026 ПО 13.10.2026</div>
-          <h1 class="sr-only">Поймай сладкий вайб</h1>
+          <p class="sr-only">Поймай сладкий вайб</p>
           <div class="hero-title-lines" aria-hidden="true">
             <img class="hero-title-line hero-title-line--1" src="assets/reference-svg/title-mobile-line-1.svg" alt="" />
             <img class="hero-title-line hero-title-line--2" src="assets/reference-svg/title-mobile-line-2.svg" alt="" />
@@ -465,7 +578,7 @@
           aria-hidden="true"
         />
         <section class="m-steps" id="rules-m">
-          <h2 class="sr-only">КАК<br />ПРИНЯТЬ<br />УЧАСТИЕ</h2>
+          <p class="sr-only">КАК<br />ПРИНЯТЬ<br />УЧАСТИЕ</p>
           <div class="m-label"><span class="sr-only">4 ПРОСТЫХ ШАГА</span></div>
           <div class="mobile-slider" data-slider>
             <div class="mobile-track">
@@ -473,10 +586,10 @@
                 <div>
                   <b>ШАГ 1</b><img src="assets/supplied/step-1.svg" alt="" />
                 </div>
-                <h3>ЗАРЕГИСТРИРУЙ</h3>
+                <div class="m-step-title">ЗАРЕГИСТРИРУЙ</div>
                 <p>
                   бонусную карту<br />Купилка/Суперкупилка<br />на сайте
-                  sosedi.by или<br />мобильном приложении,<br />предоставь
+                  <a class="inline-site-link" href="https://sosedi.by/">sosedi.by</a> или<br />мобильном приложении,<br />предоставь
                   согласие<br />на участие<br />в рекламной игре
                 </p>
               </article>
@@ -484,15 +597,20 @@
                 <div>
                   <b>ШАГ 2</b><img src="assets/supplied/step-2.svg" alt="" />
                 </div>
-                <h3>КУПИ</h3>
+                <div class="m-step-title">КУПИ</div>
                 <p>игровую продукцию<br />с картой Купилка</p>
               </article>
               <article class="m-step">
                 <div>
                   <b>ШАГ 3</b><img src="assets/supplied/step-3.svg" alt="" />
                 </div>
-                <h3>ПОЛУЧИ</h3>
-                <p>игровой код за<br />каждые 2Б</p>
+                <div class="m-step-title">ПОЛУЧИ</div>
+                <p>
+                  игровой код за<br />каждые
+                  <span class="currency-amount"
+                    >2<span class="nbrb-icon nbrb-inline">BYN</span></span
+                  >
+                </p>
                 <b class="m-step-accent"
                   >Каждый 2-й товар<br />в чеке + 1 игровой код</b
                 >
@@ -501,9 +619,15 @@
                 <div>
                   <b>ШАГ 4</b><img src="assets/supplied/step-4.svg" alt="" />
                 </div>
-                <h3>УЧАСТВУЙ</h3>
+                <div class="m-step-title">УЧАСТВУЙ</div>
                 <p>в розыгрыше<br />призов</p>
-                <a class="m-full-rules" href="#faq-m">ПОЛНЫЕ ПРАВИЛА</a>
+                <a
+                  class="m-full-rules"
+                  href="assets/documents/polnye-pravila.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >ПОЛНЫЕ ПРАВИЛА</a
+                >
               </article>
             </div>
           </div>
@@ -513,9 +637,14 @@
           </div>
         </section>
         <section class="m-prizes" id="prizes-m">
-          <h2 class="sr-only">КАКИЕ ПРИЗЫ<br />МОЖНО<br />ВЫИГРАТЬ</h2>
+          <p class="sr-only">КАКИЕ ПРИЗЫ<br />МОЖНО<br />ВЫИГРАТЬ</p>
           <article class="m-grand">
-            <img src="assets/figma-export/prize-main.png" alt="5000 рублей" /><b
+            <img src="assets/figma-export/prize-main.png" alt="5000 рублей" /><img
+              class="card-byn-symbol"
+              src="assets/ui/byn-symbol.svg"
+              alt=""
+              aria-hidden="true"
+            ><b
               >ГЛАВНЫЙ ПРИЗ<br />5000<br />белорусских рублей</b
             >
           </article>
@@ -546,50 +675,100 @@
           </div>
         </section>
         <section class="m-faq" id="faq-m">
-          <h2 class="sr-only">ВОПРОС-<br />ОТВЕТ</h2>
+          <p class="sr-only">ВОПРОС-<br />ОТВЕТ</p>
           <div class="faq-box">
             <div class="faq-list">
             <details open>
               <summary>Когда проходит Рекламная игра?</summary>
               <p>
-                Рекламная игра проходит в период<span class="mobile-answer-break"><br /></span> с 19 августа по 19 декабря 2026
-                года
+                Стать участником Рекламной игры можно в период с 19 августа по
+                13 октября 2026 года включительно.
+              </p>
+            </details>
+            <details>
+              <summary>Какой период проведения Рекламной игры?</summary>
+              <p>
+                Период проведения Рекламной игры, включая срок выдачи выигрышей
+                и публикации результатов проведения с 19 августа 2026 года по
+                19 декабря 2026 года.
               </p>
             </details>
             <details>
               <summary>Как стать участником Рекламной игры?</summary>
-              <p>Зарегистрируйте карту.</p>
+              <p>
+                Для участия в Рекламной игре в период с 00:00:00 19.08.2026 по
+                23:59:59 13.10.2026 (включительно) необходимо выполнить
+                следующие условия:<br />
+                1. Быть зарегистрированным или пройти регистрацию (создать
+                личный кабинет) на Интернет-сайте <a href="https://sosedi.by/">sosedi.by</a> или в Мобильном
+                приложении «Соседи всегда под рукой».<br />
+                2. Проверить корректность заполнения своих персональных данных и
+                подтвердить согласие на участие в Рекламной игре в личном
+                кабинете.<br />
+                3. В период с 19 августа по 13 октября 2026 года приобрести
+                Игровые продукты на сумму от 2 (Двух) и более белорусских рублей
+                в одном чеке в магазинах «Соседи», «Соседи экспресс» или «Умный
+                выбор» на территории Республики Беларусь либо на сайте
+                интернет-магазина <a href="https://sosedi-dostavka.by/">sosedi-dostavka.by</a>, применив при расчёте Карту
+                «Купилка» или «Суперкупилка».
+              </p>
             </details>
             <details>
-              <summary>
-                Какие товары необходимо купить, для участия в Рекламной игре?
-              </summary>
-              <p>Игровую продукцию.</p>
+              <summary>Что делать, если игровые коды не начислены в Личном кабинете?</summary>
+              <p>
+                Необходимо проверить:<br />
+                — зарегистрирована ли Карта «Купилка» или «Суперкупилка» на
+                сайте <a href="https://sosedi.by/">sosedi.by</a> или в Мобильном приложении;<br />
+                — есть ли согласие на участие в Рекламной игре в Личном
+                кабинете;<br />
+                — есть ли в чеке игровые продукты на сумму не менее 2 BYN (с
+                учетом скидок, предоставляемых по бонусной программе «Купилка»
+                или «Суперкупилка», и другим скидочным и(или) бонусным
+                программам).<br /><br />
+                Если все пункты соблюдены, но код не начислен, обратитесь на
+                инфолинию сети «Соседи» по номеру <a href="tel:7290">7290</a>.
+              </p>
             </details>
             <details>
-              <summary>
-                Что делать, если<span class="mobile-question-break"><br /></span> не начислены<span class="mobile-question-break"><br /></span> игровые коды<span class="mobile-question-break"><br /></span> в личном кабинете?
-              </summary>
-              <p>Позвоните на горячую линию.</p>
+              <summary>Кто может принимать участие в Рекламной игре?</summary>
+              <p>
+                К участию в Рекламной игре приглашаются все граждане Республики
+                Беларусь, а также иностранные граждане и лица без гражданства,
+                являющиеся держателями Карты/Виртуальной карты Участника и
+                зарегистрированные в личном кабинете на сайте
+                <a href="https://sosedi.by/igra-2/">sosedi.by/igra-2/</a>, заполнившие в нем достоверные актуальные
+                персональные данные.
+              </p>
             </details>
             <details>
-              <summary>Когда и где проходят розыгрыши?</summary>
-              <p>Каждую неделю.</p>
+              <summary>Какие продукты необходимо приобрести, чтобы принять участие в Рекламной игре?</summary>
+              <p>
+                Список товаров, участвующих в Рекламной игре, указан
+                <a href="assets/documents/spisok-igrovyh-tovarov.pdf" target="_blank" rel="noopener noreferrer">здесь</a>.
+              </p>
             </details>
             <details>
-              <summary>Как узнать о<span class="mobile-question-break"><br /></span><span class="mobile-question-nowrap"> результатах розыгрыша?</span></summary>
-              <p>На этой странице.</p>
-            </details>
-            <details>
-              <summary>Где и когда можно получить приз?</summary>
-              <p>Мы свяжемся с победителем.</p>
+              <summary>Как победители узнают о выигрыше?</summary>
+              <p>
+                Победители извещаются о выигрыше в срок не позднее восьми суток
+                от даты проведения соответствующего розыгрыша звонком на номер
+                телефона, указанный при регистрации на Интернет-сайте или в
+                Мобильном приложении, а также в Личном кабинете Участника на
+                Сайте. Также Организатор оставляет за собой право дополнительно
+                уведомлять Победителей о выигрыше посредством отправки
+                SMS-сообщения на номер мобильного телефона Победителя и/или
+                почтовым уведомлением на адрес, указанный в личном кабинете при
+                регистрации. При извещении Победителя о выигрыше ему сообщается
+                дата признания его Победителем в соответствии с
+                <a href="assets/documents/polnye-pravila.pdf" target="_blank" rel="noopener noreferrer">Правилами</a>.
+              </p>
             </details>
             </div>
             <div class="faq-scrollbar" aria-hidden="true"><span></span></div>
           </div>
         </section>
         <section class="m-product-section" id="products-m">
-          <h2 class="sr-only">ИГРОВЫЕ ПРОДУКТЫ</h2>
+          <p class="sr-only">ИГРОВЫЕ ПРОДУКТЫ</p>
           <div class="m-product-carousel" data-product-carousel>
             <button class="product-arrow product-arrow--prev" type="button" aria-label="Предыдущий товар"></button>
             <div class="m-product-slider" id="product-cards-m">
@@ -609,7 +788,9 @@
             ><button type="button" aria-label="Товар 4"></button><button type="button" aria-label="Товар 5"></button><button type="button" aria-label="Товар 6"></button>
           </div>
         </section>
-        <section class="m-winners" id="winners-m"><h2>ПОБЕДИТЕЛИ!</h2></section>
+        <section class="m-winners" id="winners-m">
+          <div class="m-winners-title">ПОБЕДИТЕЛИ!</div>
+        </section>
         <footer class="m-footer">
           <a class="logo-home" href="./" aria-label="На главную"
             ><img src="assets/figma-export/logo.svg" alt="Соседи"
@@ -621,7 +802,9 @@
             ><a href="#winners-m">ПОБЕДИТЕЛИ</a>
           </nav>
           <p>Горячая линия:</p>
-          <h3><a href="tel:+375296585050">+ 375 (29) 658-50-50</a></h3>
+          <div class="m-footer-phone">
+            <a href="tel:+375296585050">+ 375 (29) 658-50-50</a>
+          </div>
           <small
             >с 10:00 до 17:00 без обеда в будние дни (понедельник – пятница), за
             исключением выходных и праздничных дней, установленных и объявленных
@@ -634,10 +817,25 @@
           >
           <div class="app">
             <b>Скачай наше<br />мобильное<br />приложение</b
-            ><img src="assets/supplied/winners-decor.svg" alt="QR-код" /><img
-              src="assets/supplied/app-stores.png"
-              alt="Скачать приложение"
-            />
+            ><a
+              class="app-download-link"
+              href="https://onelink.to/sosedi.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Скачать приложение Соседи по QR-коду"
+              ><img
+                src="assets/supplied/winners-decor.svg"
+                alt="QR-код для скачивания приложения Соседи"
+            /></a><a
+              class="app-download-link"
+              href="https://onelink.to/sosedi.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Скачать приложение Соседи"
+              ><img
+                src="assets/supplied/app-stores.png"
+                alt="App Store, Google Play и AppGallery"
+            /></a>
           </div>
         </footer>
       </main>
