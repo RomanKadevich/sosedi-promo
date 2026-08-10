@@ -2021,10 +2021,13 @@ body.menu-open {
   transform-origin: 0 0;
 }
 .canvas--desktop .hero-layers .item-days {
-  left: 788.279px;
-  top: 483.645px;
-  width: 472.901px;
-  height: 314.102px;
+  /* Keep the foreground pack covering the lower edges of the fan during the
+     whole animation cycle. The right edge stays aligned with the layout. */
+  z-index: 9;
+  left: 770.279px;
+  top: 493.645px;
+  width: 490.901px;
+  height: 326.055px;
   transform: rotate(7deg);
   transform-origin: 0 0;
 }
@@ -2196,8 +2199,8 @@ body.menu-open {
   box-sizing: border-box;
   min-height: 61.5px;
   padding: 5px 90px 5px 1.53px;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 700;
 }
 .m-faq .faq-box summary:after {
@@ -2205,8 +2208,8 @@ body.menu-open {
 }
 .m-faq .faq-box p {
   padding: 0 2px 0 1.65px;
-  font-size: 10px;
-  line-height: 13px;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: 400;
 }
 .m-faq .mobile-answer-break {
