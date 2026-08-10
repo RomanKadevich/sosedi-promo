@@ -1097,6 +1097,7 @@ body {
 .m-grand,
 .m-camera {
   position: absolute;
+  box-sizing: border-box;
   left: 8px;
   width: 359px;
   border: 3px solid #fff;
@@ -2198,7 +2199,7 @@ body.menu-open {
   display: block;
   box-sizing: border-box;
   min-height: 61.5px;
-  padding: 5px 90px 5px 1.53px;
+  padding: 5px 38px 5px 1.53px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
@@ -2222,7 +2223,7 @@ body.menu-open {
   white-space: normal;
 }
 .m-faq .faq-box details:nth-child(6) summary {
-  padding-right: 55px;
+  padding-right: 38px;
 }
 
 /* Prize carousel: the supplied SVG keeps every card's original Figma layout. */
@@ -2394,7 +2395,7 @@ body.menu-open {
 }
 .m-faq .faq-box details[open] summary {
   min-height: 0;
-  padding: 6px 90px 4px 1.53px;
+  padding: 6px 38px 4px 1.53px;
 }
 .m-faq .faq-box details[open] p {
   padding-top: 1px;
@@ -2540,7 +2541,7 @@ body.menu-open {
   object-fit: fill;
 }
 .m-product-carousel .product-arrow {
-  display: none;
+  display: block;
 }
 .m-product-section .dots.six {
   bottom: 2px;
