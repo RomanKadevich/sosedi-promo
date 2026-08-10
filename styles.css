@@ -21,6 +21,16 @@ body {
   font-family: Montserrat, Arial, sans-serif;
   overflow-x: hidden;
 }
+
+.logo-home {
+  display: contents;
+}
+
+.footer-content h3 a,
+.m-footer h3 a {
+  color: inherit;
+  text-decoration: none;
+}
 .stage {
   position: relative;
   width: 100%;
@@ -645,11 +655,11 @@ body {
   background: #fff;
   color: #111;
   display: flex;
-  padding: 61px 80px;
+  padding: 61px 100px 61px 80px;
 }
 .footer-brand {
   position: relative;
-  width: 350px;
+  width: 377px;
 }
 .footer-brand img {
   width: 199px;
@@ -673,7 +683,7 @@ body {
   top: 102px;
 }
 .footer-content {
-  width: 930px;
+  width: 883px;
 }
 .footer-content nav {
   display: flex;
@@ -692,7 +702,7 @@ body {
   font-size: 24px;
 }
 .footer-content p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.3;
   margin: 9px 0;
 }
@@ -1203,7 +1213,7 @@ body {
   text-align: center;
   padding: 28px 16px;
 }
-.m-footer > img {
+.m-footer > .logo-home > img {
   width: 199px;
   height: 41px;
   object-fit: contain;
