@@ -73,16 +73,44 @@ const slider = document.querySelector("[data-slider]");
 if (slider) {
   const track = slider.querySelector(".mobile-track");
   const dots = [...document.querySelectorAll(".m-steps .dots button")];
+  let currentIndex = 0;
+  let pointerStart = null;
+
+  function renderStep(index) {
+    currentIndex = Math.max(0, Math.min(index, dots.length - 1));
+    track.style.transform = `translateX(-${currentIndex * 350}px)`;
+
+    dots.forEach((item, dotIndex) =>
+      item.classList.toggle("active", dotIndex === currentIndex),
+    );
+  }
 
   dots.forEach((dot, index) =>
-    dot.addEventListener("click", () => {
-      track.style.transform = `translateX(-${index * 350}px)`;
-
-      dots.forEach((item, dotIndex) =>
-        item.classList.toggle("active", dotIndex === index),
-      );
-    }),
+    dot.addEventListener("click", () => renderStep(index)),
   );
+
+  slider.addEventListener("pointerdown", (event) => {
+    if (event.pointerType === "mouse") return;
+    pointerStart = { x: event.clientX, y: event.clientY };
+  });
+
+  slider.addEventListener("pointerup", (event) => {
+    if (!pointerStart) return;
+
+    const distanceX = event.clientX - pointerStart.x;
+    const distanceY = event.clientY - pointerStart.y;
+    pointerStart = null;
+
+    if (Math.abs(distanceX) < 40 || Math.abs(distanceX) <= Math.abs(distanceY)) {
+      return;
+    }
+
+    renderStep(currentIndex + (distanceX < 0 ? 1 : -1));
+  });
+
+  slider.addEventListener("pointercancel", () => {
+    pointerStart = null;
+  });
 }
 
 
