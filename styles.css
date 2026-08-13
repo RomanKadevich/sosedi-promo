@@ -1035,35 +1035,35 @@ body {
   font-weight: 400;
 }
 .m-step p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.2;
   width: 240px;
-  margin-left: 59px;
-  margin-right: 0;
-  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 .m-step-accent {
   display: block;
   width: 240px;
-  margin: 17px 0 0 59px;
+  margin: 17px auto 0;
   color: var(--blue);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 800;
   line-height: 1.25;
-  text-align: left;
+  text-align: center;
 }
 .m-full-rules {
   display: block;
   width: 280px;
   height: 67px;
-  margin: 24px auto 0;
+  margin: 18px auto 0;
   border-radius: 38px;
   background: var(--orange);
   color: #fff;
   font-size: 17px;
   font-weight: 700;
-  line-height: 67px;
+  line-height: 62px;
   text-align: center;
   text-decoration: none;
 }
@@ -2338,11 +2338,11 @@ body.menu-open {
 }
 .m-prize-slide--supplied > img {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 0.75px;
+  top: 0.75px;
   display: block;
-  width: 335.501px;
-  height: 404.501px;
+  width: calc(100% - 1.5px);
+  height: calc(100% - 1.5px);
   object-fit: fill;
   transform: none;
   clip-path: none;
@@ -2352,6 +2352,10 @@ body.menu-open {
   width: 36px;
   height: 58px;
   margin-top: -29px;
+}
+.m-prize-carousel .prize-arrow::before {
+  /* The exact arrows are already part of the supplied mobile Figma cards. */
+  content: none;
 }
 .m-prize-carousel .prize-arrow--prev {
   left: 0;
