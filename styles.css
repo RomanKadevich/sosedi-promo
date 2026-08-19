@@ -2545,6 +2545,30 @@ body.menu-open {
 .m-product-carousel .product-arrow {
   display: block;
 }
+.m-product-section .m-product-carousel .product-arrow {
+  display: none;
+}
+/* Without side controls the active mobile product card uses the complete
+   inner width of the 375px mobile canvas. Swipe and pagination remain. */
+.m-product-section .m-product-slider {
+  left: 18px;
+  width: 339px;
+  height: 339px;
+}
+.m-product-section .m-product-track {
+  height: 339px;
+}
+.m-product-section .m-product-slider article,
+.m-product-section .m-product-slider article > img {
+  width: 339px;
+  height: 339px;
+}
+.m-product-section .m-product-slider article {
+  flex-basis: 339px;
+}
+.m-product-section {
+  height: 515px;
+}
 .m-product-section .dots.six {
   bottom: 2px;
   height: 18px;
